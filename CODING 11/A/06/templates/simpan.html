@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+   <header>
+      <h1>HOME PAGE</h1>
+   </header>
+   <br>
+      <a href="{{ url_for('home') }}">🔙Kembali</a>
+   <section>
+      <form action="" method="POST">
+         <label for="nama">nama</label>
+            <input type="text" name="nama" id="nama" required>
+         <label for="umur">umur</label>
+            <input type="number" min=0 name="umur" id="umur" required>
+         <button type="submit">SIMPAN</button>
+      </form>
+   </section>
+{% endblock  %}

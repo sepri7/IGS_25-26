@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<header>
+   <img src="{{ url_for('static', filename='img/bird.png') }}" width="200" alt="">
+   <h1>BIODATA</h1>
+</header>
+<main>
+   <p><B>Nama</B> : {{ nama }}</p>
+   <p><B>Kelas</B> : {{ kelas }}</p>
+   <p><B>Email</B> : {{ email }}</p>
+   <p><B>Tempat, Tanggal lahir</B> : {{ tempat }}, {{ tgl }}</p>
+   <p><B>Cita-cita</B> : {{ cita }}</p>
+   <p><B>Agama</B> : {{ agama }}</p>
+   <p><B>Tentang</B> : {{ tentang }}</p>
+</main>
+{% endblock  %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   <header>
+      <h1>DATA SISWA</h1>
+   </header>
+      <br>
+      <a href="{{ url_for('simpan') }}">➕TambahData</a>
+   <section>
+      <table border="1" >
+         <tr>
+            <td>Id</td>
+            <td>Nama</td>
+            <td>Umur</td>
+            <td>OPSI</td>
+         </tr>
+         {% for i in data_siswa %}
+         <tr>
+            <td>{{ i.id }}</td>
+            <td>{{ i.nama }}</td>
+            <td>{{ i.umur }}</td>
+            <td> <a href="{{ url_for('home', id=i.id) }}">Edit</a> |
+                <a href="{{ url_for('hapus', id=i.id) }}" onclick="return confirm('Yakin hapuss ??')">Hapus</a> </td>
+         </tr>
+         {% endfor %}
+      </table>
+   </section>
+{% endblock  %}

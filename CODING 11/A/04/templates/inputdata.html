@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header>
+   <h1>INPUT BIODATA</h1>
+</header>
+
+<main>
+   <form action="{{ url_for('bio')}}" method="post">
+      <label for="nama">Nama :</label>
+         <input type="text" name="nama" placeholder="masukkan nama" required>
+      <label for="kelas">kelas :</label>
+         <input type="number" min="10" max="12" name="kelas" required>
+      <label for="email">email :</label>
+         <input type="email" name="email" required>
+      <fieldset>
+            <legend>Tempat, Tanggal Lahir</legend>
+            <label for="tempat">tempat :</label>
+               <input type="text" name="tempat" required>
+            <label for="tgl">Tanggal Lahir :</label>
+               <input type="date" name="tgl" required>
+      </fieldset>
+      <fieldset>
+         <legend>Cita-cita</legend>
+         <label for="programer">Programer</label>
+            <input type="radio" name="cita" value="programer">
+         <label for="guru">guru</label>
+            <input type="radio" name="cita" value="guru">
+      </fieldset>
+      <label for="agama">agama :</label>
+         <select name="agama" id="agama">
+            <option value="islam">islam</option>
+            <option value="kristen">kristen</option>
+            <option value="katolik">katolik</option>
+            <option value="budha">budha</option>
+            <option value="hindu">hindu</option>
+            <option value="koghucu">koghucu</option>
+         </select>
+      <label for="tentang">Tentang :</label>
+      <textarea name="tentang" id="tentang" required>...</textarea>
+      <button type="submit">Send</button>
+   </form>
+</main>
+{% endblock  %}
