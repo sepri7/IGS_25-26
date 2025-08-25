@@ -26,7 +26,13 @@ public class App2 {
         byte zz = 5;
         byte xx = 5;
         System.out.println(zz);
-        zz++;// decrement
-        ++xx;// increment
+        // ++ : increment
+        // -- : decrement
+        zz++;// POST-increment
+        System.out.println("ke-2 z : " + zz);
+        System.out.println("ke-2 x : " + xx);
+        ++xx;// pre-increment
+        System.out.println("ke-3 z : " + zz);
+        System.out.println("ke-3 x : " + xx);
     }
 }
