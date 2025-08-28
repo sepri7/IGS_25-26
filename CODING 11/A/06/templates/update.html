@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+   <header>
+      <h1>UPDATE PAGE</h1>
+   </header>
+   <br>
+      <a href="{{ url_for('home') }}">🔙Kembali</a>
+   <section>
+      <form action="" method="POST">
+         <label for="nama">nama</label>
+            <input type="text" name="nama" value="{{ data.nama }}" id="nama" required>
+         <label for="umur">umur</label>
+            <input type="number" min=0 name="umur" id="umur" value="{{ data.umur }}" required>
+         <button type="submit">UPDATE</button>
+      </form>
+   </section>
+{% endblock  %}

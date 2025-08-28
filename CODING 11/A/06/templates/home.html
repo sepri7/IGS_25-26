@@ -19,7 +19,7 @@
             <td>{{ i.id }}</td>
             <td>{{ i.nama }}</td>
             <td>{{ i.umur }}</td>
-            <td> <a href="{{ url_for('home', id=i.id) }}">Edit</a> |
+            <td> <a href="{{ url_for('update', id=i.id) }}">Edit</a> |
                 <a href="{{ url_for('hapus', id=i.id) }}" onclick="return confirm('Yakin hapuss ??')">Hapus</a> </td>
          </tr>
          {% endfor %}

@@ -50,8 +50,8 @@ def hapus(id):
     return redirect(url_for("home"))
 
 
-@app.route("/edit/<int:id>", methods=["GET", "POST"])
-def edit(id):
+@app.route("/update/<int:id>", methods=["GET", "POST"])
+def update(id):
     dataEdit = Siswa.query.get_or_404(id)
     if request.method == "POST":
         dataEdit.nama = request.form["nama"]
@@ -59,7 +59,7 @@ def edit(id):
         db.session.commit()
         return redirect(url_for("home"))
     else:
-        return render_template("edit.html", data=dataEdit)
+        return render_template("update.html", data=dataEdit)
 
 
 if __name__ == "__main__":

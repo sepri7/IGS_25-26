@@ -62,6 +62,18 @@ class ifLoop {
             case 0 -> "Genap";
             default -> "salah...";
         };
-
+        System.out.println(result);
+        System.out.println("Switch Lamda yield : -----------------");
+        byte h = 11;
+        String result2 = switch (h % 2) {
+            case 1 -> {
+                yield "Ganjil";
+            }
+            case 0 -> {
+                yield "Genap";
+            }
+            default -> "salah...";
+        };
+        System.out.println(result2);
     }
 }
