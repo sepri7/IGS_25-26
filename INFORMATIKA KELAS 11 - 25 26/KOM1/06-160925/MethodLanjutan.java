@@ -36,6 +36,8 @@ class MethodLanjutan {
             return 1;
         } else {
             return n * faktorial(n - 1);
+            // 5! = 120
+            // 1 * 2 * 3 * 4 * 5 = 120
         }
     }
 
@@ -53,5 +55,7 @@ class MethodLanjutan {
 
         // recursive
         recur(10);
+
+        System.out.println("Faktorial 5 ! = " + );
     }
 }
