@@ -11,6 +11,10 @@ class Animal {
     static void sound(String n) {
         System.out.println(n);
     }
+
+    String getName() {
+        return this.name;
+    }
 }
 
 public class app_constractor {
@@ -22,5 +26,10 @@ public class app_constractor {
         animalObj01.sound("guk guk");
         Animal animalObj02 = new Animal("cat", 12);
         animalObj02.sound("meow..");
+        Animal bird01 = new Animal("LoveBird", 2);
+        System.out.println(bird01.name);
+        bird01.sound("cakcakcak");
+        System.out.println(animalObj02.getName());
+        System.out.println(bird01.getName());
     }
 }
