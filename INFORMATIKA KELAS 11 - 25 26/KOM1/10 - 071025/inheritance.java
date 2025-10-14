@@ -1,3 +1,4 @@
+
 class inheritance {
     public static void main(String[] args) {
         a objA = new a();
