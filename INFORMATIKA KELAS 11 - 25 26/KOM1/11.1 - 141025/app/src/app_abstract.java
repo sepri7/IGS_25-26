@@ -4,7 +4,6 @@ abstract class sekolah {
     sekolah(String newName) {
         this.sekolahName = newName;
     }
-
     abstract void Display();
 }
 
