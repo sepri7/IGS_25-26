@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>HOME PAGE....</h1>
+    <p>ini nilai : {{ nilais }}</p>
+    <h2>ini if Statement-Flash: </h2>
+    {% if nilais >= 90 and nilais <=100 %}
+        <p>NILAI TINGGI</p>
+    {% elif nilais >= 80 and nilais <=89 %}
+        <p>NILAI SEDANG</p>
+    {% elif nilais >= 0 and nilais <=79 %}
+        <p>NILAI RENDAH</p>
+    {% else %}
+        <p>NILAI INVALID !!</p>
+    {% endif %}
+    
+{% endblock %}

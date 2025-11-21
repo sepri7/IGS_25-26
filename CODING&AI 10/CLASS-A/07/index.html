@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tester Flex</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body{
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .one{
+            background-color: aqua;
+            padding: 10px;
+        }
+        .content{
+            display: flex;
+            flex: 1;
+        }
+        .two{
+            background-color: rgb(119, 119, 119);
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .three{
+            background-color: rgb(62, 26, 129);
+            flex: 1;
+        }
+        .four{
+            background-color: rgb(200, 17, 90);
+            flex: 1;
+        }
+        .five{
+            background-color: rgb(226, 251, 7);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">one</div>
+    <div class="content">
+        <div class="two">two</div>
+        <div class="three">three</div>
+        <div class="four">four</div>
+    </div>
+    <div class="five">five</div>
+</body>
+</html>

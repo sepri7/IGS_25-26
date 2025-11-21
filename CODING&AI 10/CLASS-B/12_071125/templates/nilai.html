@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <h1>NILAI : </h1>
+    {% for i in nilaiSiswa %}
+        <p>{{ i }}</p>
+    {% endfor %}
+{% endblock %}

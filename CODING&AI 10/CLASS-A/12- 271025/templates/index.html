@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="hero-header">
+        <h1>Scentech Easy</h1>
+        <a href="#">Home</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JAVA</a>
+    </header>
+    <section class="hero-content">
+        <img src="{{ url_for('static', filename='img/pokemon.jpeg') }}" width="200px" >
+        <h1>Welcome to Scientech</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat commodi eveniet quia iste consequuntur optio.</p>
+        <a href=""> Mulai Belajar </a>
+    </section>
+    <footer class="hero-footer">
+        <p>&copy; Scientech Easy 2025</p>
+    </footer>
+</body>
+</html>

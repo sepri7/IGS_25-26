@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LOOP in flask</h1>
+    {% for i in range(8) %}
+        <p>tampil ? : {{ i }}</p>
+    {% endfor %}
+
+<a href="{{ url_for('tester_func') }}">klik disini</a>
+<p><a href="/tester_route">klik disini</a></p>
+<p><a href="{{ url_for('route_func') }}">klik disini (render)</a></p>
+</body>
+</html>

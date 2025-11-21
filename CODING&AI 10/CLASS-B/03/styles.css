@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(136, 136, 136);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header,section, article, section ,aside {
+    padding: 20px;
+}
+
+header{
+    background-color: rgb(213, 19, 19);
+}
+nav {
+    background-color: aqua;
+}
+section{
+    background-color: rgb(217, 217, 32);
+}
+article{
+    background-color: rgb(244, 136, 12);
+}
+.content{
+    flex: 2;
+}
+aside{
+    background-color: rgb(196, 17, 130);
+    flex: 1;
+}
+footer{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+main{
+    display: flex;
+}

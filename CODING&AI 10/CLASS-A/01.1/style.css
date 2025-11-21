@@ -1,0 +1,9 @@
+body{
+    background-color: yellow;
+    text-align:center;
+}
+
+img{
+    width:100px;
+    border-radius:50%;
+}

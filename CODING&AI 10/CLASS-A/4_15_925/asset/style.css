@@ -1,0 +1,28 @@
+*{
+    font-family: 'Courier New';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(163, 163, 163);
+}
+
+header{
+    background-color: rgb(111, 233, 233);
+    width: 200px;
+    padding: 20px;
+    border-width: 30px;
+}
+nav{
+    background-color: red;
+}
+.box1{
+    background-color: blueviolet;
+}
+#box2{
+    background-color: chartreuse;
+}
+.box1, #box2{
+    text-align: center;
+}

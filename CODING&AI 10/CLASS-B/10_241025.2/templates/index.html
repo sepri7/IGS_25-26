@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>INI CONTOH IF DI HTML FLASK !!!</H1>
+    <p>INI DARI MAIN.PY : A = {{ panggil_a }} </p>
+    <p> {{ b }}</p>
+    {% if panggil_a % 2 == 0 %}
+        <p>ANGKA GENAP !!</p>
+    {% elif panggil_a % 2 == 1 %}
+        <p>ANGKA GANJIL !!</p>
+    {% else %}
+        <p>BUKAN NILAI ANGKA !!!</p>
+    {% endif %}
+</body>
+</html>

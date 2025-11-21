@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTER</title>
+</head>
+<body>
+    <a href="{{ url_for('home') }}">Home-link</a>
+    <a href="{{ url_for('informasi') }}">informasi-link</a>
+    <a href="{{ url_for('about') }}">about-link</a>
+    <a href="{{ url_for('contact') }}">about-link</a>
+
+    <br>
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

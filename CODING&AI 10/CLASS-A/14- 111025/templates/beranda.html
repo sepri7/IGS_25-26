@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <h1>SELAMAT DATANG...</h1>
+    {% if hari == 1 %}
+        <p>SENIN</p>
+    {% elif hari == 2 %}
+        <p>SELASA</p>
+    {% elif hari == 3 %}
+        <p>RABU</p>
+    {% else %}
+        <p>INVALID !</p>
+    {% endif %}
+
+    <h2>LOOP IN Flask</h2>
+    {% for i in range(10) %}
+     <p>{{ "🎁"*i }}</p>
+     <P> {{ i }}</P>
+    {% endfor %}
+{% endblock %}

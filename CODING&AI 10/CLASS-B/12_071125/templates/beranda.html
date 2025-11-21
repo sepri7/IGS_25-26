@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>BERANDA</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro error pariatur impedit consequuntur necessitatibus. Quibusdam.</p>
+    <h2>CONTOH IF-Statement in Flask : {{ nilai }} </h2>
+    {% if nilai >= 80 and nilai <= 100 %}
+        <p>ANAK SANGAT RAJIN !</p>
+    {% elif nilai >= 70 %}
+        <p>ANAK RAJIN !</p>
+    {% else %}
+        <p>TIDAK RAJIN !!!</p>
+    {% endif %}
+
+    {% if (a+b)%2 == 0 %}
+        <p>GENAP</p>
+    {% else %}
+        <p>GANJIL</p>
+    {% endif %}
+    
+{% endblock %}
